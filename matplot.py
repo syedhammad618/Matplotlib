@@ -83,28 +83,26 @@
 
 # gas price data graph
 
-# import matplotlib.pyplot as plt
-# import numpy as np
-# import pandas as pd
-
-# plt.figure(figsize=(10,10))
-# gas_data=pd.read_csv('gas_price.csv')
-# plt.plot(gas_data.Year,gas_data.Japan,marker=".")
-# plt.plot(gas_data.Year,gas_data.Canada ,marker=".")
-# plt.plot(gas_data.Year,gas_data.Germany ,marker=".")
-# # for country in gas_data:
-# #     if country != 'Year':
-# #         plt.plot(gas_data.Year,gas_data[country],marker=".",label=country)
-        
-# plt.title("Gas Prices Over Time In (USD)",color="#1ec0e8",size=20,fontweight="bold")
-# plt.xlabel("Years",color="#1eb2e8",size=15)
-# plt.ylabel("Gas Price",color="#1eb2e8",size=15)
-# plt.legend(["japan","Canada","Germany"])
-# plt.grid()
-# plt.xticks(gas_data.Year[::3])
-# plt.show()
-
-
+import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
-fifa=pd.read_csv('fifa_data.csv')
-print(fifa.head(5))
+
+plt.figure(figsize=(10,10))
+gas_data=pd.read_csv('gas_price.csv')
+plt.plot(gas_data.Year,gas_data.Japan,marker=".")
+plt.plot(gas_data.Year,gas_data.Canada ,marker=".")
+plt.plot(gas_data.Year,gas_data.Germany ,marker=".")
+# for country in gas_data:
+#     if country != 'Year':
+#         plt.plot(gas_data.Year,gas_data[country],marker=".",label=country)
+        
+plt.title("Gas Prices Over Time In (USD)",color="#1ec0e8",size=20,fontweight="bold")
+plt.xlabel("Years",color="#1eb2e8",size=15)
+plt.ylabel("Gas Price",color="#1eb2e8",size=15)
+plt.legend(["japan","Canada","Germany"])
+plt.grid()
+plt.xticks(gas_data.Year[::3])
+plt.show()
+
+
+
